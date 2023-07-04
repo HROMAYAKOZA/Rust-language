@@ -13,7 +13,7 @@ fn main() {
     // x=1112;
     let x = String::from("value");
     println!("x = {x}");
-    println!("y = {y}");
+    // println!("y = {y}");
     let y: i32 = 1;
     {
         let y: i32 = 2;
@@ -21,6 +21,6 @@ fn main() {
     }
     println!("y = {y}");
     let mut guess = String::from("");
-    stdin().readline(&mut guess).unwrap();
+    stdin().read_line(&mut guess).unwrap();
     guess = guess.trim().to_string();
 }
